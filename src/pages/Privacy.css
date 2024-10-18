@@ -1,0 +1,147 @@
+/* Privacy.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    position: relative;
+    color: rgb(15, 15, 16);
+  }
+  
+  header h1 {
+    animation: fadeInUp 2s ease-out;
+  }
+  
+  header p {
+    color: blue; /* Blue color for paragraph text */
+    animation: fadeInUp 3s ease-out;
+  }
+  
+  .privacy-section {
+    animation: slideIn 1.5s ease-out;
+    opacity: 0;
+  }
+  
+  .privacy-section.visible {
+    opacity: 1;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .py-5 {
+    padding: 3rem 0;
+  }
+  
+  .h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #454ef5;
+    
+  }
+  
+  .fw-bold {
+    font-weight: bold;
+  }
+  
+  .lead {
+    color: rgb(15, 16, 16);
+    font-size: 1.25rem;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    animation: fadeIn 3s ease-out;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  /* Image Styles */
+  .privacy-img {
+    animation: slideInFromRight 1s ease-out;
+    transition: transform 0.3s ease;
+  }
+  
+  .privacy-img:hover {
+    transform: scale(0.9); /* Decrease image size on hover */
+  }
+  
+  /* Hover Effects */
+  header h1:hover,
+  footer p:hover {
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .privacy-section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
